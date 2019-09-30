@@ -1,0 +1,33 @@
+ <div id="sideBarHolder">
+        <div id="sideBarBanner">
+          Your Docs  
+        </div>
+        <div id="sideBarHeader1">
+            <p id="opt1">{{sortOpt}}</p> <!-- SORT BY Option 1 -->
+        </div>
+        <div id="sideBarHeader2">
+            <p id="opt2">Date</p> <!-- SORT BY Option 2 -->
+        </div>
+        <div id="tableContainer">
+        <table>
+        <col style="width:70%">
+        <col style="width:30%">    
+            <tr *ngFor="let test of tests">
+            <td>{{test.itemTitle}}</td>
+            <td>{{test.itemDate}}</td>
+            </tr>
+        </table>
+        </div>    
+        <div class="sideBarEndIcons">
+        <button (click)="onSort"> <a class="button fancy-button"><i class="material-icons">create</i></a></button><!-- CREATE NEW -->
+        </div>
+        <div class="sideBarEndIcons">
+        <button (click)="onSort()" class="button fancy-button"><i class="material-icons">sort</i></button> <!-- SORT OPTIONS (Title, Date, Person, etc) -->
+   <select class="custom-select" (change)="setSort($event)">
+      <option value="" disabled>Sort By:</option>
+      <option>Title</option>
+      <option>Name</option>
+      <option>Location?</option>
+   </select>
+        </div>   
+    </div>

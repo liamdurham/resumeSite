@@ -1,0 +1,47 @@
+ <aside id="ledgerBarHolder">
+        <div id="ledgerBarBanner">
+          Test Item Title   
+        </div>
+        <div id=ledgerHeadersWrap>
+        <div class="ledgerBarHeaders">
+            <a href=#>Action</a>
+        </div>
+        <div class="ledgerBarHeaders">
+        <a href=#>Email</a>
+        </div>
+        <div class="ledgerBarHeaders">
+        <a href=#>Name</a>
+        </div>
+        <div class="ledgerBarHeaders">
+        <a href=#>Date</a>
+        </div>
+        </div>    
+        <div id="tableContainer">
+        <table>
+        <col style="width:25%">
+        <col style="width:25%"> 
+        <col style="width:25%"> 
+        <col style="width:25%">     
+            <tr *ngFor="let test of tests">
+            <td>{{test.itemAction}}</td>
+            <td>{{test.itemEmail}}</td>
+            <td>{{test.itemName}}</td>
+            <td>{{test.itemDate}}</td>
+            </tr>
+            <tr>
+            <td>
+            Test Title</td>
+            <td>Test email</td>
+            <td>Test name</td>
+            <td>12/19</td>
+            </tr>
+            <tr>
+            <td>
+            Test Title</td>
+            <td>Test email</td>
+            <td>Test name</td>
+            <td>10/19</td>
+            </tr>
+        </table>
+        </div>         
+    </aside>

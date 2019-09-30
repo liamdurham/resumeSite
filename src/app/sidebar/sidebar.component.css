@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+#sideBarHolder
+{ 
+position: relative;   
+line-height: 100%;
+text-align: center; 
+display: inline-block;
+outline-style: solid; 
+outline-color: black; 
+padding-top: 10px;
+width: 25%; 
+}
+
+#sideBarBanner
+{
+border-bottom: solid;
+padding: 15px;
+margin: auto;
+font-size: 30px;
+width: 80%;
+text-align: center;    
+align-content: center;
+border-width: 2px;
+font-family: Arial;  
+}
+#sideBarHeader1, #sideBarHeader2
+{
+display: inline-block;
+text-align: center;
+margin: auto;
+margin-top: 10px;    
+width: 50%;
+height: 24px;
+font-family: Arial;
+font-size: 16px;    
+}
+.sideBarHeaders a
+{
+    text-decoration: none;
+    color: black;
+}
+.sideBarHeaders a:hover
+{
+ padding-right: 5px;     
+}
+.sideBarHeaders a:hover::before{
+     content: "⇩";
+}
+table 
+{
+width: 90%;    
+overflow: auto; 
+margin: auto;
+border-style: none;
+border-collapse: collapse;
+max-height: 500px;    
+}
+#tableContainer{
+ max-height: 450px;
+ overflow-y: scroll;     
+}
+
+td
+{
+border: 1px solid black;
+border-bottom: 2px;
+padding: 5px;
+width: 128px;
+height: 48px;  
+font-family: Arial;    
+border-collapse: collapse;  
+text-align: left;    
+}
+.sideBarEndIcons
+{
+display: inline-block;
+text-align: center;
+margin: auto;
+margin-left: 5%; 
+margin-top: 25px;    
+width: 40%;
+height: 32px;  
+}
+.sideBarEndIcons button
+{
+display: inline-block;
+text-align: center;
+margin: 0, auto;
+height: 32px; 
+width: 60px; 
+}
+/*** Scrollbar ************************************************/
+#tableContainer::-webkit-scrollbar {
+    background-color: #F5F5F5;
+    float: right;
+    height: 450px;
+    width: 5px;
+}
+#tableContainer::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+}
+
+/*** Buttons **********************/
+
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border: none;
+}
